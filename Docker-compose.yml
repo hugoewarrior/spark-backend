@@ -1,0 +1,8 @@
+version: '3'
+services:
+  java_app1:
+    image: "lab7/spark:latest"
+    command: "java -jar target/ApplicationMain-1.0.jar"
+    build: .
+    ports:
+      - "4567:4567"
